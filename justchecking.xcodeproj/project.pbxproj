@@ -16,6 +16,12 @@
 		131BD07C2891DEE600212DB3 /* justcheckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD07B2891DEE600212DB3 /* justcheckingTests.swift */; };
 		131BD0862891DEE600212DB3 /* justcheckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD0852891DEE600212DB3 /* justcheckingUITests.swift */; };
 		131BD0882891DEE600212DB3 /* justcheckingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD0872891DEE600212DB3 /* justcheckingUITestsLaunchTests.swift */; };
+		131BD09628926BDB00212DB3 /* ReSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131BD09528926BDB00212DB3 /* ReSwift.xcframework */; };
+		131BD09728926BDB00212DB3 /* ReSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 131BD09528926BDB00212DB3 /* ReSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		131BD09B28926D6900212DB3 /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD09A28926D6900212DB3 /* state.swift */; };
+		131BD09D28926DD400212DB3 /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD09C28926DD400212DB3 /* store.swift */; };
+		131BD09F28926E6400212DB3 /* action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD09E28926E6400212DB3 /* action.swift */; };
+		131BD0A128926EBA00212DB3 /* appReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD0A028926EBA00212DB3 /* appReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		131BD09828926BDB00212DB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				131BD09728926BDB00212DB3 /* ReSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		131BD0612891DEDF00212DB3 /* justchecking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = justchecking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		131BD0642891DEDF00212DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,11 @@
 		131BD0812891DEE600212DB3 /* justcheckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = justcheckingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		131BD0852891DEE600212DB3 /* justcheckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = justcheckingUITests.swift; sourceTree = "<group>"; };
 		131BD0872891DEE600212DB3 /* justcheckingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = justcheckingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		131BD09528926BDB00212DB3 /* ReSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReSwift.xcframework; path = Carthage/Build/ReSwift.xcframework; sourceTree = "<group>"; };
+		131BD09A28926D6900212DB3 /* state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = state.swift; sourceTree = "<group>"; };
+		131BD09C28926DD400212DB3 /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
+		131BD09E28926E6400212DB3 /* action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = action.swift; sourceTree = "<group>"; };
+		131BD0A028926EBA00212DB3 /* appReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131BD09628926BDB00212DB3 /* ReSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +109,7 @@
 				131BD07A2891DEE600212DB3 /* justcheckingTests */,
 				131BD0842891DEE600212DB3 /* justcheckingUITests */,
 				131BD0622891DEDF00212DB3 /* Products */,
+				131BD09428926BDA00212DB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,7 @@
 		131BD0632891DEDF00212DB3 /* justchecking */ = {
 			isa = PBXGroup;
 			children = (
+				131BD09928926D2C00212DB3 /* Redux */,
 				131BD0642891DEDF00212DB3 /* AppDelegate.swift */,
 				131BD0662891DEDF00212DB3 /* SceneDelegate.swift */,
 				131BD0682891DEDF00212DB3 /* ViewController.swift */,
@@ -127,6 +155,25 @@
 			path = justcheckingUITests;
 			sourceTree = "<group>";
 		};
+		131BD09428926BDA00212DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131BD09528926BDB00212DB3 /* ReSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		131BD09928926D2C00212DB3 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				131BD09A28926D6900212DB3 /* state.swift */,
+				131BD09C28926DD400212DB3 /* store.swift */,
+				131BD09E28926E6400212DB3 /* action.swift */,
+				131BD0A028926EBA00212DB3 /* appReducer.swift */,
+			);
+			name = Redux;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +184,7 @@
 				131BD05D2891DEDF00212DB3 /* Sources */,
 				131BD05E2891DEDF00212DB3 /* Frameworks */,
 				131BD05F2891DEDF00212DB3 /* Resources */,
+				131BD09828926BDB00212DB3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +309,10 @@
 				131BD0692891DEDF00212DB3 /* ViewController.swift in Sources */,
 				131BD0652891DEDF00212DB3 /* AppDelegate.swift in Sources */,
 				131BD0672891DEDF00212DB3 /* SceneDelegate.swift in Sources */,
+				131BD09B28926D6900212DB3 /* state.swift in Sources */,
+				131BD09D28926DD400212DB3 /* store.swift in Sources */,
+				131BD09F28926E6400212DB3 /* action.swift in Sources */,
+				131BD0A128926EBA00212DB3 /* appReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,60 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "59c353ad3370ba56dccd6774eac5871b503fb0a1bc07413017f776b7079aa735",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "dde70a94c4d28d7265cd7228924a6a9d9c9b251bb3fc78a13be3730850811290",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "d4ba542af25df468ff0832a433ee7fa0f5f32860c1467b404d4e2c1b984bb877",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "7b66877f67dd2b7ede2a57613acb0a06b2c0b30ab4d44a43dece33bda46df517",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "tvos-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "a38745e96f5dc677a48cddae983da2cb98119baac28fbecd59cffd8627d4827e",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    }
+  ],
+  "commitish" : "6.1.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "8f02003dd15739e21570e4685b08f6e4abbb53c02059143ea511f1152458311c",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "8ccd6acb6ba6df03399cd990edf51c8fe6258671c777f29c39fffab1ce028070",
+      "name" : "ReSwift",
+      "container" : "ReSwift.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}
